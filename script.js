@@ -31,23 +31,23 @@ function check(event) {
         correct++;
         
     }
-    var alerts = ["Well done!", "That wasn't bad. Cheer up! I'm sorry, you failed!"];
-alert(alerts[0])
+//     var alerts = ["Well done!", "That wasn't bad. Cheer up! I'm sorry, you failed!"];
+// alert(alerts[0])
 
     console.log(correct)
 
     var range;
     if (correct < 1) {
-        range = 2;
+        alert("I'm Sorry you failed")
     }
 
-    if (correct > 0 && correct < 5) {
-        range = 1;
+    else if (correct > 0 && correct < 5) {
+        alert("That was not bad. Cheer up")
 
     }
 
     if (correct > 2) {
-        range = 0;
+        alert("Well Done!!")
     }
     //var countDownTime = new Time("10:00").getTime();
 
